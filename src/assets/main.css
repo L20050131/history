@@ -1,0 +1,33 @@
+@import './base.css';
+
+html,
+body,
+#app {
+  width: 100%;
+  min-height: 100%;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+body.has-modal {
+  overflow: hidden;
+}
+
+#app {
+  isolation: isolate;
+}
+
+/* Desktop play is text-heavy; enlarge the rem base so every folio stays legible. */
+@media (min-width: 901px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 1400px) {
+  body {
+    font-size: 19px;
+  }
+}
